@@ -1,7 +1,5 @@
 # Bibelsuche (Tauri + React + Typescript)
 
-![Bibelsuche Logo](./src/assets/app-logo.png)
-
 ## macOS Build
 
 ```bash
