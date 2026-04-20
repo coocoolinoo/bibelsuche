@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "bibelsuche",
+  "version": "0.1.0",
+  "identifier": "com.cocolino.bibelsuche",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "bibelsuche",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "resources": [
+      "../Zefania XML Bibelübersetzungen/Deutsch/SF_2009-01-20_GER_SCH1951_(SCHLACHTER 1951).zip",
+      "../Zefania XML Bibelübersetzungen/Rumänisch/SF_2013-09-09_RUM_RCCV_(ROMANIAN CORRECTED CORNILESCU BIBLE).zip"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
